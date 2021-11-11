@@ -12,13 +12,30 @@ html{
 body{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
+    color: white;
 }
 
+button{
+    padding: 13px 32px;
+    font-size: 0.875rem;
+    background-color: #ff0e83;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all .5s;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    border-color: #ff0e83;
+    color: black;
+}
 
 /* HEADER */
 header{
     background-color: #4e2a84;
-    color: white;
 }
 
 .header__content{
@@ -56,4 +73,30 @@ header{
 
 .header__content .active a{
     color: #ff0e83;
+}
+
+/* CAROUSEL */
+.bakeCarousel{
+    background-image: url(../img/b3.jpg);
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__content{
+    text-align: center;
+}
+
+.carousel__content p:first-child{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.carousel__content p:nth-child(2){
+    font-size: 1.1rem;
+    padding: 23px 0;
 }
