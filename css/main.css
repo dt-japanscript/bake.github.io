@@ -158,3 +158,30 @@ header{
 .bakeIntro .intro__item:nth-child(6){
     background-color: #836eaa;
 }
+
+/* NUMBER */
+.bakeNumber{
+    padding: 70px 0;
+}
+.bakeNumber .number__content{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.bakeNumber .number__item h3{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4e2a84;
+}
+
+.bakeNumber .number__item p{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: black;
+    padding: 24px 0;
+}
