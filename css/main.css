@@ -100,3 +100,61 @@ header{
     font-size: 1.1rem;
     padding: 23px 0;
 }
+
+/* INTRO */
+.bakeIntro{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+}
+
+.bakeIntro .ab1{
+    grid-column: 2 / span 2;
+}
+.bakeIntro .intro__bakeBest{
+    grid-column: 1 / span 2;
+}
+.bakeIntro .ab4{
+    grid-column: 3 / span 2;
+}
+
+.intro__item img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.bakeIntro .intro__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+.bakeIntro .intro__text h3, p{
+    text-align: center;
+}
+.bakeIntro .intro__text h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.bakeIntro .intro__text p{
+    color: #c1c1c1;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 29px;
+
+}
+
+.bakeIntro .intro__item:first-child, .intro__item:nth-child(8){
+    background-color: #4e2a84;
+}
+.bakeIntro .intro__item:nth-child(3){
+    background-color: #ff0e83;
+}
+.bakeIntro .intro__item:nth-child(4){
+    background-color: #ed6498;
+}
+.bakeIntro .intro__item:nth-child(6){
+    background-color: #836eaa;
+}
