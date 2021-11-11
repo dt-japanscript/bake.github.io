@@ -75,6 +75,15 @@ header{
     color: #ff0e83;
 }
 
+h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+
 /* CAROUSEL */
 .bakeCarousel{
     background-image: url(../img/b3.jpg);
@@ -184,4 +193,59 @@ header{
     letter-spacing: 1.4px;
     color: black;
     padding: 24px 0;
+}
+
+/* SERVICES */
+.bakeServices{
+    background-image: url(../img/s1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.bakeServices ._services__content{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bakeServices .services__item{
+    padding: 0 20px;
+}
+
+.bakeServices .services__item i{
+    font-size: 3.75rem;
+    color: #4e2a84;
+    height: 105px;
+    width: 105px;
+    background-color: white;
+    border: 1px solid #4e2a84;
+    border-radius: 50%;
+    line-height: 105px;
+    transition: all .5s;
+}
+.bakeServices .services__item i:hover{
+    color: #ff0e83;
+}
+
+.bakeServices .services__item h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 17px 0;
+    color: #212529;
+}
+
+.bakeServices .services__item p{
+    color: #212529;
+    font-size: 0.875rem;
+    line-height: 25px;
+    padding: 12px;
+}
+
+.bakeServices .services__item button{
+    padding: 12px 27px;
+    border-width: 2px;
 }
