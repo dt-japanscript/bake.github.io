@@ -30,7 +30,7 @@
         <div class="header__content">
             <p>BAKE</p>
             <nav>
-                <ul>
+                <ul id="mainNav">
                     <li class="active"><a href="#">home</a></li>
                     <li><a href="#intro">about</a></li>
                     <li><a href="#services">services</a></li>
@@ -488,6 +488,19 @@
     <!-- BACKTOTOP JS -->
     <script src="./js/util.js"></script>
     <script src="./js/main-backToTop.js"></script>
+
+    <!-- Navigation Bar JS -->
+    <script>
+        var mainNav = document.getElementById("mainNav");
+        var listNav = mainNav.getElementsByTagName("li")
+        for (var i = 0; i < listNav.length; i++) {
+            listNav[i].addEventListener("click", function () {
+                var current = document.querySelector("#mainNav .active");
+                current.className = current.className.replace("active", "");
+                this.className += "active";
+            })
+        }
+    </script>
 </body>
 
 </html>
