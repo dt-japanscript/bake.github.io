@@ -139,20 +139,18 @@ header{
     align-items: center;
     padding: 32px;
 }
-.bakeIntro .intro__text h3, p{
-    text-align: center;
-}
 .bakeIntro .intro__text h3{
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-align: center;
 }
 .bakeIntro .intro__text p{
     color: #c1c1c1;
     font-size: 0.875rem;
     font-weight: 700;
     line-height: 29px;
-
+    text-align: center;
 }
 
 .bakeIntro .intro__item:first-child, .intro__item:nth-child(8){
@@ -322,12 +320,12 @@ header{
     opacity: 1;
 }
 
-
 .gallery__overlay p{
     position: absolute;
     bottom: 38px;
     right: 28px;
     text-align: right;
+    color: white;
     font-size: 0.75rem;
     transform: translateY(50px);
     transition: all .5s;
@@ -338,3 +336,84 @@ header{
     opacity: 1;
 }
 
+/* TEAM */
+.bakeTeam{
+    background-color: #4e2a84;
+    padding: 70px 0;
+}
+
+.team__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 30px;
+    width: 75%;
+    margin: auto;
+}
+.team__member{
+    position: relative;
+}
+
+.team__member img{
+    display: block;
+    width: 100%;
+}
+
+.team__title{
+    background-color: #ff0e83;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    opacity: 1;
+    transition: all .5s;
+}
+.team__member:hover .team__title{
+    opacity: 0;
+}
+.team__title h3{
+    font-size: 1.3rem;
+}
+.team__title p{
+    font-size: 0.875rem;
+    line-height: 28px;
+}
+
+.team__details{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px 40px;
+    transition: all .5s;
+    opacity: 0;
+}
+.team__details h3{
+    font-size: 1.3rem;
+    color: #ff0e83;
+}
+.team__details p{
+    font-size: 0.875rem;
+    line-height: 28px;
+    opacity: 1;
+}
+.team__member:hover .team__details{
+    opacity: 1;
+}
+.team__socials{
+    margin-top: 24px;
+}
+.team__socials i{
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    color: white;
+    transition: all .5s;
+}
+.team__socials i:hover{
+    color: #ff0e83;
+    border-color: #ff0e83;
+}
