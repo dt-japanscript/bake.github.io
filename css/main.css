@@ -417,3 +417,43 @@ header{
     color: #ff0e83;
     border-color: #ff0e83;
 }
+
+/* FEEDBACK */
+.bakeFeedback{
+    background-image: url(../img/cc1.jpg);
+    background-size: cover;
+    padding: 70px 0;
+}
+
+.feedback__content{
+    width: 70%;
+    margin: 0 auto;
+    border: 3px solid #ff0e83;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 32px;
+}
+.feedback__content i{
+    font-size: 1.3rem;
+    color: #2cbeff;
+    padding: 0 18px;
+}
+.feedback__content p{
+    line-height: 30px;
+    letter-spacing: 1.3px;
+}
+.feedback__content .feedback_name{
+    color: white;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot span{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot.active span{
+    background-color: black;
+}
+
+.feedback__content .owl-theme .owl-dots .owl-dot:focus{
+    outline: none;
+}
